@@ -190,13 +190,13 @@
         line-height: 1;
         justify-content: center;
         align-items: center;
+        transition: 0.3s all ease-in-out;
 
         span {
             transform: skewX(20deg);
             padding-right: 30px;
         }
 
-        transition: 0.3s all ease-in-out;
 
         &:focus {
             box-shadow: unset;

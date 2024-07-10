@@ -1156,7 +1156,6 @@
 
 :root {
   --c-red: #c40000;
-  --c-red-2: #DF3C19;
   --c-main: #333;
   --c-text: #000;
   --c-gray: #979797;
@@ -1310,17 +1309,6 @@ p {
   color: var(--c-gray);
   white-space: pre-line;
 }
-.box-title .img {
-  width: 721px;
-  height: 481px;
-  margin: 0 auto 126px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .img {
   overflow: hidden;
@@ -1330,6 +1318,11 @@ img {
 }
 .img img:hover {
   transform: scale(1.1);
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .owl-link {
@@ -1726,19 +1719,6 @@ img {
   text-align: center;
 }
 
-.washoku {
-  max-width: 1700px;
-  margin: 0 auto;
-  position: relative;
-}
-.washoku img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 146px;
-  height: 351px;
-}
-
 #banner {
   margin-bottom: 155px;
 }
@@ -1748,9 +1728,8 @@ img {
 
 #message {
   margin-bottom: 431px;
-  position: relative;
 }
-#message .box .content, #message #page-shop .box .page-shop__desc2, #page-shop #message .box .page-shop__desc2 {
+#message .box .content {
   font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
   font-size: 20px;
@@ -1761,18 +1740,11 @@ img {
   text-align: center;
   margin-top: 88px;
 }
-#message .icon-fix {
-  position: absolute;
-  top: 200px;
-  right: 0;
-  width: 486px;
-}
 
 #chef {
   margin-bottom: 417px;
-  position: relative;
 }
-#chef .box .content, #chef #page-shop .box .page-shop__desc2, #page-shop #chef .box .page-shop__desc2 {
+#chef .box .content {
   font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
   font-size: 20px;
@@ -1810,24 +1782,11 @@ img {
   white-space: pre-line;
   color: var(--c-gray);
 }
-#chef .icon-fix {
-  position: absolute;
-  top: -200px;
-  left: 0;
-  width: 648px;
-}
-#chef .icon-fix-2 {
-  position: absolute;
-  top: calc(100% - 90px);
-  right: 0;
-  width: 680px;
-}
 
 #space {
   margin-bottom: 418px;
-  position: relative;
 }
-#space .box .content, #space #page-shop .box .page-shop__desc2, #page-shop #space .box .page-shop__desc2 {
+#space .box .content {
   font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
   font-size: 20px;
@@ -1891,12 +1850,6 @@ img {
 }
 #space .box .box-space .box-btn a img {
   width: 100%;
-}
-#space .icon-fix {
-  position: absolute;
-  left: 0;
-  bottom: -400px;
-  width: 560px;
 }
 
 #about {
@@ -1977,7 +1930,6 @@ img {
 
 #menu {
   margin-bottom: 668px;
-  position: relative;
 }
 #menu .menu-list {
   max-width: 719px;
@@ -2093,36 +2045,12 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
-#menu .owl-menu .owl-dots {
-  margin-top: 75px;
-}
-#menu .owl-menu .owl-dots .owl-dot {
-  padding: 0 13px !important;
-}
-#menu .owl-menu .owl-dots .owl-dot span {
-  margin: 0;
-  width: 12px;
-  height: 12px;
-}
-#menu .owl-menu .owl-dots .owl-dot.active span {
-  background-color: var(--c-red-2);
-}
-#menu .icon-fix {
-  position: absolute;
-  right: 0;
-  top: -450px;
-  width: 660px;
-}
 
-#online-shop {
-  position: relative;
-  margin-bottom: 500px;
-}
 #online-shop .box {
   max-width: 712px;
   margin: 0 auto;
 }
-#online-shop .box .content, #online-shop #page-shop .box .page-shop__desc2, #page-shop #online-shop .box .page-shop__desc2 {
+#online-shop .box .content {
   font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
   font-size: 20px;
@@ -2159,455 +2087,66 @@ img {
 #online-shop .box .online-shop__img img {
   width: 100%;
 }
-#online-shop .box .online-shop__btn_inquired {
-  margin-top: 234px;
-  text-align: center;
-}
-#online-shop .box .online-shop__btn_inquired a img {
-  width: 295px;
-}
-#online-shop .icon-fix {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 600px;
-}
-#online-shop .icon-fix-2 {
-  position: absolute;
-  right: 0;
-  bottom: -360px;
-  width: 523px;
-}
 
-#contact-page {
-  padding-top: 200px;
-  padding-bottom: 98px;
-}
-#contact-page .box {
+#month .container {
   max-width: 948px;
   margin: 0 auto;
 }
-#contact-page .box .box-title-2 {
-  margin-bottom: 86px;
+#month .container .title {
+  padding: 0 114px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 97px;
 }
-#contact-page .box .box-title-2 .title {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
+#month .container .title h1 {
+  text-align: center;
   font-size: 34px;
-  line-height: 50px;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  border-bottom: 1px solid var(--c-white);
-  padding-bottom: 20px;
+  font-weight: 400;
+  line-height: 50.29px;
+  letter-spacing: 0.4em;
+  color: #ffffff;
+  margin-bottom: 28px;
 }
-#contact-page .box .form-contact {
-  max-width: 680px;
+#month .container .content {
+  max-width: 667px;
   margin: 0 auto;
 }
-#contact-page .box .form-contact .form-group {
+#month .container .content p {
+  white-space: pre-line;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.58px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+#month .gallery {
+  max-width: 950.45px;
+  margin: 130px auto 0 auto;
   display: grid;
-  grid-template-columns: 224px 1fr;
+  grid-gap: 19px;
+  grid-template-columns: repeat(auto-fit, minmax(465.45px, 1fr));
+  padding-bottom: 155px;
+  border-bottom: 1px solid #ffffff;
 }
-#contact-page .box .form-contact .form-group:not(#contact-page .box .form-contact .form-group:last-child) {
-  margin-bottom: 116px;
-}
-#contact-page .box .form-contact .form-group:nth-last-child(2) {
-  margin-bottom: 106px !important;
-}
-#contact-page .box .form-contact .form-group .form-title .title {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  margin: 0;
-  line-height: 29px;
-}
-#contact-page .box .form-contact .form-group .form-title .required {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  line-height: 29px;
-  color: var(--c-red-2);
-}
-#contact-page .box .form-contact .form-group .form-control {
-  height: 63px;
-}
-#contact-page .box .form-contact .form-group textarea.form-control {
-  height: 387px;
-}
-#contact-page .box .form-contact .form-group .form-sbm .form-checkbox-input {
-  display: grid;
-  grid-template-columns: 25px 1fr;
-  gap: 17px;
-  align-items: flex-start;
-  margin-bottom: 60px;
-}
-#contact-page .box .form-contact .form-group .form-sbm .form-checkbox-input input {
-  width: 25px;
-  height: 25px;
-}
-#contact-page .box .form-contact .form-group .form-sbm .form-checkbox-input .content, #contact-page #page-shop .box .form-contact .form-group .form-sbm .form-checkbox-input .page-shop__desc2, #page-shop #contact-page .box .form-contact .form-group .form-sbm .form-checkbox-input .page-shop__desc2 {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  line-height: 29px;
-  margin-top: -5px;
-  width: calc(100% + 50px);
-}
-#contact-page .box .form-contact .form-group .form-sbm .btn-sbm {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 38px;
-  letter-spacing: 1px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-decoration: none;
-  width: 228px;
-  height: 46px;
-  border-radius: 30px;
-  border: 2px solid var(--c-white);
-  background-color: unset;
-}
-#contact-page .box .contact-back {
-  text-align: center;
-  margin-top: 232px;
-}
-#contact-page .box .contact-back a img {
-  width: 261px;
-  height: 49px;
-}
-
-#page-shop .box {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-#page-shop .box .box-title .desc {
-  letter-spacing: 18px;
-}
-#page-shop .box .content, #page-shop .box .page-shop__desc2 {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  line-height: 2.5;
-  margin-top: 86px;
-  margin-bottom: 70px;
-}
-#page-shop .box .page-shop__video {
-  max-width: 1038px;
-  height: 480px;
-  margin: 0 auto;
-}
-#page-shop .box .page-shop__video iframe {
+#month .gallery img {
+  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 310.3px;
 }
-#page-shop .box .page-shop__desc2 {
-  margin-top: 180px;
-}
-#page-shop .box .page-shop__img {
-  margin-bottom: 240px;
-}
-#page-shop .box .page-shop__img .img {
-  width: 720px;
-  height: 480px;
+#month .navigate {
+  max-width: 964px;
   margin: 0 auto;
 }
-#page-shop .box .owl-menu .owl-dots {
-  margin-top: 66px;
-}
-#page-shop .box .owl-menu .owl-dots .owl-dot {
-  padding: 0 13px !important;
-}
-#page-shop .box .owl-menu .owl-dots .owl-dot span {
-  margin: 0;
-  width: 12px;
-  height: 12px;
-}
-#page-shop .box .owl-menu .owl-dots .owl-dot.active span {
-  background-color: var(--c-red-2);
-}
-#page-shop .box .page-shop__table {
-  max-width: 706px;
-  margin: 0 auto;
-  margin-top: 136px;
-}
-#page-shop .box .page-shop__table .page-shop__table-title {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 4.8px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  margin-bottom: 33px;
-}
-#page-shop .box .page-shop__table .table tr td {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 2px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  border-bottom: 1px solid var(--c-white);
-  padding: 28.5px 22px;
-  text-align: left;
-}
-#page-shop .box .page-shop__table .table tr td:first-child {
-  width: 156px;
-}
-#page-shop .box .page-shop__table .table tr:first-child td {
-  border-top: 1px solid var(--c-white);
-}
-#page-shop .box .page-shop__table-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-decoration: none;
-  width: 236px;
-  height: 46px;
-  border-radius: 30px;
-  border: 2px solid var(--c-white);
-  line-height: 1;
-  margin: 46px 0;
-}
-#page-shop .box .page-shop__table-desc {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
+#month .navigate a {
   font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  line-height: 2.5;
-}
-#page-shop .box .page-shop__table-desc span {
-  text-decoration: underline;
-}
-#page-shop .box .contact-back {
-  text-align: center;
-  margin-top: 232px;
-}
-#page-shop .box .contact-back a img {
-  width: 261px;
-  height: 49px;
-}
-
-#page-news {
-  margin-bottom: 96px;
-}
-#page-news .box {
-  max-width: 900px;
-  margin: 0 auto;
-}
-#page-news .box .page-news__list .page-news__item {
-  display: grid;
-  grid-template-columns: 18px 1fr;
-  gap: 22px;
-  border-bottom: 1px solid var(--c-white);
-  padding: 56px 67px;
-}
-#page-news .box .page-news__list .page-news__item:first-child {
-  border-top: 1px solid var(--c-white);
-}
-#page-news .box .page-news__list .page-news__item .page-news__item-icon {
-  font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 41px;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-}
-#page-news .box .page-news__list .page-news__item .page-news__item-content .page-news__item-content__title {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 41px;
-  letter-spacing: 10px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-}
-#page-news .box .page-news__list .page-news__item .page-news__item-content .page-news__item-content__title a {
-  text-decoration: none;
-  color: inherit;
-}
-#page-news .box .page-news__list .page-news__item .page-news__item-content .page-news__item-content__title a:hover {
-  color: var(--c-red-2);
-}
-#page-news .box .page-news__list .page-news__item .page-news__item-content .page-news__item-content__date {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: 10px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-}
-#page-news .box .page-news-back {
-  margin-top: 56px;
-}
-#page-news .box .page-news-back a {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
+  line-height: 29.58px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
   text-decoration: none;
 }
-
-#page-news-detail {
-  margin-bottom: 96px;
-}
-#page-news-detail .box {
-  max-width: 900px;
-  margin: 0 auto;
-}
-#page-news-detail .box .page-news-back {
-  margin-top: 56px;
-}
-#page-news-detail .box .page-news-back a {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 4px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  text-decoration: none;
-}
-
-#page-seasonal .box-title .desc {
-  margin-bottom: 0;
-}
-#page-seasonal .page-seasonal-list {
-  max-width: 719px;
-  margin: 0 auto;
-  margin-top: 93px;
-  margin-bottom: 308px;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav {
-  margin-bottom: 86px;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item::marker {
-  color: var(--c-white);
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item:not(#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item:last-child) {
-  margin-bottom: 86px;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item .page-seasonal__item-desc {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  letter-spacing: 1.7px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  white-space: pre-line;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item .page-seasonal__item-recommend {
+#month .navigate .top {
+  margin-top: 34px;
+  margin-bottom: 21px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item .page-seasonal__item-recommend .mene__item-recommend__text {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 2;
-  letter-spacing: 1.7px;
-  white-space: pre-line;
-  color: var(--c-gray);
-  text-align: center;
-  text-align: left;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-nav .page-seasonal__item .page-seasonal__item-recommend .mene__item-recommend__y {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 2px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-align: left;
-  white-space: nowrap;
-}
-#page-seasonal .page-seasonal-list .page-seasonal-note {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.4;
-  letter-spacing: 1.7px;
-  white-space: pre-line;
-  color: var(--c-white);
-  text-align: center;
-  text-align: left;
-  border: 1px solid var(--c-white);
-  padding: 26px 40px;
-  white-space: pre-line;
-}
-#page-seasonal .contact-back {
-  text-align: center;
-  margin-top: 232px;
-}
-#page-seasonal .contact-back a img {
-  width: 261px;
-  height: 49px;
 }
