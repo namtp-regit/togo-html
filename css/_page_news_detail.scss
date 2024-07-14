@@ -1,0 +1,17 @@
+#page-news-detail {
+    margin-bottom: 96px;
+
+    .box {
+        max-width: 900px;
+        margin: 0 auto;
+
+        .page-news-back {
+            margin-top: 56px;
+            a {
+                @include content;
+                text-align: left;
+                text-decoration: none;
+            }
+        }
+    }
+}

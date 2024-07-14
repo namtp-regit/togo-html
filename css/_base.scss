@@ -1,5 +1,6 @@
 :root {
     --c-red: #c40000;
+    --c-red-2: #DF3C19;
     --c-main: #333;
     --c-text: #000;
     --c-gray: #979797;
@@ -44,9 +45,9 @@ body {
     font-size: 16px;
     color: var(--c-main);
     background-image: linear-gradient(90deg, #000 50%, #611510 100%);
-    font-family: "Noto Sans", sans-serif;
+    // font-family: "Noto Sans", sans-serif;
     // font-family: "WindSong", cursive;
-    // font-family: "Sawarabi Mincho", serif;
+    font-family: "Sawarabi Mincho", serif;
     // font-family: "Noto Sans Javanese", sans-serif;
 
 }
@@ -164,6 +165,11 @@ p {
         letter-spacing: 0.1px;
         color: var(--c-gray);
         white-space: pre-line;
+    }
+    .img {
+        width: 721px;
+        height: 481px;
+        margin: 0 auto 126px;
     }
 }
 

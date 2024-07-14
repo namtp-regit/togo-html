@@ -1,0 +1,101 @@
+#contact-page {
+    padding-top: 200px;
+    padding-bottom: 98px;
+
+    .box {
+        max-width: 948px;
+        margin: 0 auto;
+
+        .box-title-2 {
+            margin-bottom: 86px;
+            .title {
+                @include content(34px, 4px, var(--c-white), 50px);
+                border-bottom: 1px solid var(--c-white);
+                padding-bottom: 20px;
+            }
+        }
+        .form-contact {
+            max-width: 680px;
+            margin: 0 auto;
+            .form-group {
+                display: grid;
+                grid-template-columns: 224px 1fr;
+
+                &:not(&:last-child) {
+                    margin-bottom: 116px;
+                }
+
+                &:nth-last-child(2) {
+                    margin-bottom: 106px !important;
+                }
+
+                .form-title {
+                    .title {
+                        @include content;
+                        text-align: left;
+                        margin: 0;
+                        line-height: 29px;
+                    }
+                    .required {
+                        @include content;
+                        text-align: left;
+                        line-height: 29px;
+                        color: var(--c-red-2);
+                    }
+                }
+                .form-control {
+                    height: 63px;
+                }
+                textarea {
+                    &.form-control {
+                        height: 387px;
+                    }
+                }
+
+                .form-sbm {
+                    .form-checkbox-input {
+                        display: grid;
+                        grid-template-columns: 25px 1fr;
+                        gap: 17px;
+                        align-items: flex-start;
+                        margin-bottom: 60px;
+
+                        input {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        .content {
+                            @include content;
+                            text-align: left;
+                            line-height: 29px;
+                            margin-top: -5px;
+                            width: calc(100% + 50px);
+                        }
+                    }
+                    .btn-sbm {
+                        @include content(26px, 1px, var(--c-white), 38px);
+                        text-decoration: none;
+                        width: 228px;
+                        height: 46px;
+                        border-radius: 30px;
+                        border: 2px solid var(--c-white);
+                        background-color: unset;
+
+                    }
+                }
+            }
+        }
+
+        .contact-back {
+            text-align: center;
+            margin-top: 232px;
+
+            a {
+                img {
+                    width: 261px;
+                    height: 49px;
+                }
+            }
+        }
+    }
+}
