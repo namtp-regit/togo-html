@@ -1,0 +1,70 @@
+#page-seasonal {
+
+    .box-title {
+        .desc {
+            margin-bottom: 0;
+        }
+    }
+    .page-seasonal-list {
+        max-width: 719px;
+        margin: 0 auto;
+        margin-top: 93px;
+        margin-bottom: 308px;
+
+        .page-seasonal-nav {
+            margin-bottom: 86px;
+
+            .page-seasonal__item {
+                &::marker {
+                    color: var(--c-white);
+                }
+                &:not(&:last-child) {
+                    margin-bottom: 86px;
+                }
+
+                .page-seasonal__item-desc {
+                    @include content(20px, 1.7px, var(--c-white), 36px);
+                    text-align: left;
+                    white-space: pre-line;
+                }
+                .page-seasonal__item-recommend {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .mene__item-recommend__text {
+                        @include content(17px, 1.7px, var(--c-gray));
+                        text-align: left;
+                        
+                    }
+                    .mene__item-recommend__y {
+                        @include content(20px, 2px, var(--c-white));
+                        @include center_flex;
+                        gap: 10px;
+                        text-align: left;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .page-seasonal-note {
+            @include content(17px, 1.7px, var(--c-white), 1.4);
+            text-align: left;
+            border: 1px solid var(--c-white);
+            padding: 26px 40px;
+            white-space: pre-line;
+        }
+    }
+
+    .contact-back {
+        text-align: center;
+        margin-top: 232px;
+
+        a {
+            img {
+                width: 261px;
+                height: 49px;
+            }
+        }
+    }
+}
