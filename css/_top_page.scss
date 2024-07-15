@@ -1,3 +1,16 @@
+.washoku {
+    max-width: 1700px;
+    margin: 0 auto;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 146px;
+        height: 351px;
+    }
+}
+
 #banner {
     margin-bottom: 155px;
 
@@ -8,6 +21,7 @@
 
 #message {
     margin-bottom: 431px;
+    position: relative;
 
     .box {
         .content {
@@ -15,10 +29,18 @@
             margin-top: 88px;
         }
     }
+
+    .icon-fix {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        width: 486px;
+    }
 }
 
 #chef {
     margin-bottom: 417px;
+    position: relative;
 
     .box {
         .content {
@@ -49,10 +71,25 @@
             }
         }
     }
+
+    .icon-fix {
+        position: absolute;
+        top: -200px;
+        left: 0;
+        width: 648px;
+    }
+
+    .icon-fix-2 {
+        position: absolute;
+        top: calc(100% - 90px);
+        right: 0;
+        width: 680px;
+    }
 }
 
 #space {
     margin-bottom: 418px;
+    position: relative;
 
     .box {
         .content {
@@ -110,6 +147,13 @@
                 }
             }
         }
+    }
+
+    .icon-fix {
+        position: absolute;
+        left: 0;
+        bottom: -400px;
+        width: 560px;
     }
 }
 
@@ -175,6 +219,7 @@
 
 #menu {
     margin-bottom: 668px;
+    position: relative;
 
     .menu-list {
         max-width: 719px;
@@ -261,10 +306,40 @@
     .owl-menu {
         max-width: 1440px;
         margin: 0 auto;
+
+        .owl-dots {
+            margin-top: 75px;
+
+            .owl-dot {
+                padding: 0 13px !important;
+
+                span {
+                    margin: 0;
+                    width: 12px;
+                    height: 12px;
+                }
+
+                &.active {
+                    span {
+                        background-color: var(--c-red-2);
+                    }
+                }
+            }
+        }
+    }
+
+    .icon-fix {
+        position: absolute;
+        right: 0;
+        top: -450px;
+        width: 660px;
     }
 }
 
 #online-shop {
+    position: relative;
+    margin-bottom: 500px;
+
     .box {
         max-width: 712px;
         margin: 0 auto;
@@ -292,5 +367,30 @@
                 width: 100%;
             }
         }
+
+        .online-shop__btn_inquired {
+            margin-top: 234px;
+            text-align: center;
+
+            a {
+                img {
+                    width: 295px;
+                }
+            }
+        }
+    }
+
+    .icon-fix {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 600px;
+    }
+
+    .icon-fix-2 {
+        position: absolute;
+        right: 0;
+        bottom: -360px;
+        width: 523px;
     }
 }
