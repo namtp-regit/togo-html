@@ -1316,6 +1316,12 @@ p {
   margin: 0 auto 126px;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .img {
   overflow: hidden;
 }
@@ -1324,11 +1330,6 @@ p {
 }
 .img img:hover {
   transform: scale(1.1);
-}
-.img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .owl-link {
@@ -1725,6 +1726,19 @@ p {
   text-align: center;
 }
 
+.washoku {
+  max-width: 1700px;
+  margin: 0 auto;
+  position: relative;
+}
+.washoku img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 146px;
+  height: 351px;
+}
+
 #banner {
   margin-bottom: 155px;
 }
@@ -1734,6 +1748,7 @@ p {
 
 #message {
   margin-bottom: 431px;
+  position: relative;
 }
 #message .box .content, #message #page-shop .box .page-shop__desc2, #page-shop #message .box .page-shop__desc2 {
   font-family: "Sawarabi Mincho", serif;
@@ -1746,9 +1761,16 @@ p {
   text-align: center;
   margin-top: 88px;
 }
+#message .icon-fix {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 486px;
+}
 
 #chef {
   margin-bottom: 417px;
+  position: relative;
 }
 #chef .box .content, #chef #page-shop .box .page-shop__desc2, #page-shop #chef .box .page-shop__desc2 {
   font-family: "Sawarabi Mincho", serif;
@@ -1788,9 +1810,22 @@ p {
   white-space: pre-line;
   color: var(--c-gray);
 }
+#chef .icon-fix {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 648px;
+}
+#chef .icon-fix-2 {
+  position: absolute;
+  top: calc(100% - 90px);
+  right: 0;
+  width: 680px;
+}
 
 #space {
   margin-bottom: 418px;
+  position: relative;
 }
 #space .box .content, #space #page-shop .box .page-shop__desc2, #page-shop #space .box .page-shop__desc2 {
   font-family: "Sawarabi Mincho", serif;
@@ -1856,6 +1891,12 @@ p {
 }
 #space .box .box-space .box-btn a img {
   width: 100%;
+}
+#space .icon-fix {
+  position: absolute;
+  left: 0;
+  bottom: -400px;
+  width: 560px;
 }
 
 #about {
@@ -1936,6 +1977,7 @@ p {
 
 #menu {
   margin-bottom: 668px;
+  position: relative;
 }
 #menu .menu-list {
   max-width: 719px;
@@ -2051,7 +2093,31 @@ p {
   max-width: 1440px;
   margin: 0 auto;
 }
+#menu .owl-menu .owl-dots {
+  margin-top: 75px;
+}
+#menu .owl-menu .owl-dots .owl-dot {
+  padding: 0 13px !important;
+}
+#menu .owl-menu .owl-dots .owl-dot span {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+}
+#menu .owl-menu .owl-dots .owl-dot.active span {
+  background-color: var(--c-red-2);
+}
+#menu .icon-fix {
+  position: absolute;
+  right: 0;
+  top: -450px;
+  width: 660px;
+}
 
+#online-shop {
+  position: relative;
+  margin-bottom: 500px;
+}
 #online-shop .box {
   max-width: 712px;
   margin: 0 auto;
@@ -2092,6 +2158,25 @@ p {
 }
 #online-shop .box .online-shop__img img {
   width: 100%;
+}
+#online-shop .box .online-shop__btn_inquired {
+  margin-top: 234px;
+  text-align: center;
+}
+#online-shop .box .online-shop__btn_inquired a img {
+  width: 295px;
+}
+#online-shop .icon-fix {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+}
+#online-shop .icon-fix-2 {
+  position: absolute;
+  right: 0;
+  bottom: -360px;
+  width: 523px;
 }
 
 #contact-page {
