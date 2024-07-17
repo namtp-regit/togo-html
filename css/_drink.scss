@@ -1,6 +1,5 @@
-#drink {
+#page-drink {
     .title {
-        text-align: center;
         display: flex;
         gap: 50px;
         justify-content: center;
@@ -174,6 +173,40 @@
                         width: 21px;
                         height: 38px;
                     }
+                }
+            }
+        }
+
+        .last-navigate {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 261px;
+
+            .right {
+                p {
+                    white-space: pre-line;
+                    color: #ffffff;
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 32.54px;
+                    letter-spacing: 0.1em;
+
+                    &:nth-child(2) {
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 25.14px;
+                        letter-spacing: 0.1em;
+                        color: #979797;
+                    }
+                }
+            }
+
+            .left {
+                svg {
+                    width: 21px;
+                    height: 38px;
                 }
             }
         }

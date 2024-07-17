@@ -1,4 +1,4 @@
-#drink {
+#page-drink {
     @media only screen and (max-width: 768px) {
         .title {
             gap: 30px;
@@ -87,6 +87,25 @@
                                 line-height: 17px;
                                 letter-spacing: 0.05em;
                             }
+                        }
+                    }
+                }
+            }
+
+            .last-navigate {
+                max-width: 87px;
+                .right {
+                    p {
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        letter-spacing: 0.1em;
+
+                        &:nth-child(2) {
+                            font-size: 11px;
+                            font-weight: 400;
+                            line-height: 17px;
+                            letter-spacing: 0.05em;
                         }
                     }
                 }
